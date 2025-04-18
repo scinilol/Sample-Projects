@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager - Login & Register</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth" id="auth-container">
+        <h2 class="auth__title" id="auth-title">Login</h2>
+        
+        <!-- Login Form -->
+        <form id="login-form">
+            <div class="auth__group">
+                <label class="auth__label" for="login-username">Username</label>
+                <input class="auth__input" type="text" id="login-username" autocomplete="username" required>
+            </div>
+            <div class="auth__group">
+                <label class="auth__label" for="login-password">Password</label>
+                <input class="auth__input password-field" type="password" id="login-password" autocomplete="current-password" required>
+                <i class="fa-solid fa-eye auth__toggle-icon"></i>
+            </div>
+            <button type="button" class="auth__button" onclick="doLogin();">Login</button>
+            <p id="loginResult" style="color: red; text-align: center;"></p>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" style="display: none;">
+            <div class="auth__group">
+                <label class="auth__label" for="register-name">Name</label>
+                <input class="auth__input" type="text" id="register-name" autocomplete="given-name" required>
+            </div>
+            <div class="auth__group">
+                <label class="auth__label" for="register-email">Email</label>
+                <input class="auth__input" type="text" id="register-email" autocomplete="email" required>
+            </div>
+            <div class="auth__group">
+                <label class="auth__label" for="register-username">Username</label>
+                <input class="auth__input" type="text" id="register-username" autocomplete="username" required>
+            </div>
+            <div class="auth__group">
+                <label class="auth__label" for="register-password">Password</label>
+                <input class="auth__input password-field" type="password" id="register-password" autocomplete="new-password" required>
+                <i class="fa-solid fa-eye auth__toggle-icon"></i>
+            </div>
+            <button type="button" class="auth__button" onclick="doRegister();">Register</button>
+            <p id="registerResult" style="color: red; text-align: center;"></p>
+        </form>
+        
+        <p id="toggle-text-prefix" class="auth__toggle" onclick="toggleAuth()">Don't have an account?</p>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
