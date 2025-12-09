@@ -1,2 +1,2 @@
 # Sample-Projects
-Sample of various projects, relevant project or work samples demonstrating skills in Javascript/HTML and Python development
+Sample of various projects or work samples demonstrating skills in Javascript/HTML and Python development
